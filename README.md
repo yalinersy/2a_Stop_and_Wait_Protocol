@@ -51,10 +51,10 @@ s.close()
 ```
 ## OUTPUT
 
-## Client
+## Server
 <img width="693" height="179" alt="image" src="https://github.com/user-attachments/assets/33d2278d-381e-45f4-a2a8-e1282818f9e9" />
 
-## Server
+## Client
 <img width="592" height="195" alt="image" src="https://github.com/user-attachments/assets/5cfd3962-b0dc-43fd-af86-aa853485348d" />
 
 
