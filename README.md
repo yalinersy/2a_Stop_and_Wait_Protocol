@@ -10,54 +10,8 @@ To write a python program to perform stop and wait protocol
 6. Stop the Program
 ## PROGRAM
 
-## Server
-```
-import socket
-import datetime
 
-s = socket.socket()
-s.bind(('localhost', 8000))
-s.listen(5)
-
-print("Server waiting for connection...")
-
-while True:
-    c, addr = s.accept()
-    print("Connected from:", addr)
-
-    now = datetime.datetime.now()
-    c.send(str(now).encode())
-
-    msg = c.recv(1024).decode()
-    print("Client Message:", msg)
-
-    c.close()
-
-```
-
-## Client
-```
-import socket
-
-s = socket.socket()
-s.connect(('localhost', 8000))
-
-print(s.getsockname())
-print(s.recv(1024).decode())
-
-s.send("Acknowledgement received from the server".encode())
-s.close()
-
-```
 ## OUTPUT
-
-## Server
-<img width="722" height="100" alt="image" src="https://github.com/user-attachments/assets/7710e91b-a2ae-4e9d-ab9f-e828b1bdb5f9" />
-
-
-## Client
-<img width="604" height="84" alt="image" src="https://github.com/user-attachments/assets/e38d7509-f597-4d45-a6b5-ce1078057934" />
-
 
 
 ## RESULT
